@@ -39,7 +39,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun JokeListScreen(viewModel: JokeViewModel) {
 
-    var jokeList = viewModel.jokeList.value // Joke list is observed from the view model
+    val jokeList = viewModel.jokeList.value // Joke list is observed from the view model
 
     // State to manage the refreshing state
     var isRefreshing by remember { mutableStateOf(false) }
@@ -49,6 +49,7 @@ fun JokeListScreen(viewModel: JokeViewModel) {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
     ) { innerPadding ->
+        @Suppress("AssignedValueIsNeverRead") // isRefreshing is not used directly but is required for the PullToRefreshBox
         PullToRefreshBox(
             state = refreshState,
             isRefreshing = isRefreshing,

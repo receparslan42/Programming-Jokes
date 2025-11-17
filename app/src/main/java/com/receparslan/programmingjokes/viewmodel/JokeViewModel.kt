@@ -26,7 +26,7 @@ class JokeViewModel() : ViewModel() {
                     }
                 }
             } catch (_: Exception) {
-                jokeList.value = listOf<Joke>(Joke("single", "Check your connection!", "", "", 0))
+                jokeList.value = listOf(Joke("single", "Check your connection!", "", "", 0))
             }
         }
     }

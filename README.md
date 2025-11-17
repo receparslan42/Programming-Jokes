@@ -34,9 +34,9 @@ Jetpack Compose UI with pull-to-refresh. Built with MVVM, Retrofit, and Material
 
 ## Screenshots
 
-| Home Screen                                                |
-|------------------------------------------------------------|
-| <img src="screenshots/home_screen.jpg" alt="Home screen"/> | 
+| Home Screen                                                            |
+|------------------------------------------------------------------------|
+| <img src="screenshots/home_screen.jpg" alt="Home screen" width="300"/> | 
 
 ## Project Structure
 
